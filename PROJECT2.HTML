@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doing Nails is My Hobby</title>
+    <style>
+      body {
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/140/640/original/images_%281%29.jpeg?1724402565");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+      }
+
+      h1 {
+        color: blueviolet;
+      }
+
+      h2 {
+        color: pink;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      p {
+        font-size: 10px;
+        line-height: 1.5;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        border: 1px solid black;
+        background: pink;
+        font-size: 20px;
+        border-radius: 6px;
+        padding: 10px 15px;
+        transition: all 150ms ease-in-out;
+      }
+
+      button:hover {
+        background: transparent;
+        cursor: pointer;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      footer {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 18px;
+      }
+
+      .theme-button {
+        font-size: 12px;
+        background: black;
+        color: white;
+        padding: 5px 8px;
+      }
+
+      .theme-button:hover {
+        color: black;
+        background: white;
+      }
+
+      .AcrylicNails-intro-picture {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out, filter 2000ms ease-in;
+        width: 100%;
+      }
+
+      .AcrylicNails-intro-picture:hover {
+        filter: contrast(50%);
+        transform: scale(1.1);
+      }
+
+      .grid {
+        margin: 20px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 15px;
+      }
+
+      .grid img {
+        width: 100%;
+        height: 200px;
+        border-radius: 8px;
+        transition: all 150ms ease-in-out, filter 2000ms ease-in;
+      }
+
+      .grid img:hover {
+        transform: scale(2);
+      }
+
+      .dark {
+        background: #17153b;
+      }
+
+      .dark .container {
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      .dark a {
+        color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-button">Change Theme</button>
+    <div class="container">
+      <h1>Artificial Nails</h1>
+      <h2>My Favorite Hobby</h2>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/140/640/original/images_%281%29.jpeg?1724402565"
+        alt="Artificial Nails"
+        class="AcrylicNails-intro-picture"
+      />
+
+      <div class="grid">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/140/637/original/Screenshot_from_2024-05-19_10-13-41.png?1724401797"
+          alt="Nail Style 1"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/140/635/original/Screenshot_from_2024-05-19_10-11-41.png?1724401737"
+          alt="Nail Style 2"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/140/636/original/Screenshot_from_2024-05-19_10-13-56.png?1724401770"
+          alt="Nail Style 3"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/140/638/original/Screenshot_from_2024-05-19_10-14-38.png?1724401820"
+          alt="Nail Style 4"
+        />
+      </div>
+
+      <p>
+        Acrylic nails are definitely the most popular type of fake nails used
+        today. Acrylic nails are made from a liquid and a powder that combine to
+        form a hard protective layer over your natural nails. They are strong,
+        durable, and can be shaped into any style you want.
+      </p>
+
+      <a href="https://web.facebook.com/profile.php?id=100063895121760"
+        >Book Appointment</a
+      >
+    </div>
+
+    <footer>
+      Coded by 💅
+      <a
+        href="https://www.linkedin.com/in/hannah-camacho-7747b72a0/"
+        target="_blank"
+        >Diana Camacho</a
+      >
+    </footer>
+
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
